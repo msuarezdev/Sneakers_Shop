@@ -10,7 +10,7 @@
     >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-        <v-toolbar-title>NURE SNEAKERS</v-toolbar-title>
+        <v-toolbar-title>DS SNEAKERS</v-toolbar-title>
 
         <v-spacer></v-spacer>
     </v-app-bar>

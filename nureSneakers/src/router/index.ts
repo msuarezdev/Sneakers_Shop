@@ -1,10 +1,12 @@
+import type { title } from "process";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
   path: '/',
   name: 'home',
-  component: () => import('../views/HomeView.vue')
+  component: () => import('../views/HomeView.vue'),
+  meta: { title: 'DS - Sneakers'}
   },
 
 

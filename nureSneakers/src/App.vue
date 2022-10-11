@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <v-theme-provider theme="dark">
       <MainLayout></MainLayout>
       <v-main>
         <router-view/>
         <!-- Aca iria el contenido central -->
       </v-main>
-    </v-theme-provider>
   </v-app>
 </template>
 

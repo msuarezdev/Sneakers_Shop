@@ -1,5 +1,5 @@
 <template>
-  <v-carousel hide-delimiters>
+  <v-carousel hide-delimiters cycle :interval="intervalo" :show-arrows="false">
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -12,21 +12,34 @@
   export default {
     data () {
       return {
+        intervalo: 5000,
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: '../src//assets/img/Jordan1.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: '../src//assets/img/yezzy-350.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src:  '../src//assets/img/AJ1-hype.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src:  '../src//assets/img/Airmax1-atmos.jpg',
+          },
+          {
+            src:  '../src//assets/img/airmax1-og.jpg',
+          },
+          {
+            src:  '../src//assets/img/airmax270.jpg',
           },
         ],
       }
     },
   }
 </script>
+
+<style lang="scss">
+.v-img__img{
+  object-fit: cover;
+}
+</style>
